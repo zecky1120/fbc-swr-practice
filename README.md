@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# fbc-swr-practice
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+フィヨルドブートキャンプ向けのサンプルアプリです。
 
-## Available Scripts
+## プラクティスを進めるにあたって
 
-In the project directory, you can run:
+このリポジトリのブランチを切り替えると、正解が見えてしまいます。また、他の受講生が作成した提出物も見ようと思えば見ることができます。
 
-### `npm start`
+正解を見てしまわないように注意しながら進めていってください。 実力をつけていくためにも、自分自身の力でソースコードを完成させていきましょう。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How to use
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. 右上の `Fork` ボタンを押してください。
+2. `#{自分のアカウント名}/fbc-swr-practice` が作成されます。
+3. 作業 PC の任意の作業ディレクトリにて `git clone` してください。
 
-### `npm test`
+```
+$ git clone https://github.com/自分のアカウント名/fbc-swr-practice.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. `cd fbc-swr-practice` でカレントディレクトリを変更してください。
+5. `npm start`でローカルサーバーを起動できます。
+6. ソースコードを修正したら、自動的にアプリケーションが更新されます。動作を確認してください。
+7. 自分が書いたコードを GitHub に push してください。
+8. ソースコードが完成したら、以下の注意点に気を付けながら自分のリポジトリへの Pull Request を作成し、URL を提出してください。
+   - OK `自分のアカウント名/main` ← `自分のアカウント名/fbc-swr-practice`
+   - NG `fjordllc/main` ← `自分のアカウント名/fbc-swr-practice`
+9. 合格したら上記 Pull Request をマージしてください。
