@@ -11,6 +11,15 @@ const fecther = async (url) => {
   return res.json();
 };
 
-function App() {}
+function App() {
+  const { data, error, isLoading } = useSWR(url, fecther);
+  if (error) {
+    return <p>Failed to load.</p>;
+  } else if (isLoading) {
+    return <p>loading...</p>;
+  } else {
+    return <>{data && <p>Status: {data.description}</p>}</>;
+  }
+}
 
 export default App;
