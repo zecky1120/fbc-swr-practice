@@ -1,19 +1,16 @@
-import { useState, useEffect } from "react";
+import useSWR from "swr";
 import "./App.css";
 
 const url = "http://localhost:3001/200?sleep=2000";
 const headers = { Accept: "application/json" };
+const fecther = async (url) => {
+  const res = await fetch(url, { headers });
+  if (!res.ok) {
+    throw new Error(`Error, status: ${res.status}`);
+  }
+  return res.json();
+};
 
-function App() {
-  const [status, setStatus] = useState("");
-  
-  useEffect(() => {
-    fetch(url, { headers })
-      .then((res) => res.json())
-      .then((json) => setStatus(json.description))
-  }, []);
-
-  return <>{status && <p>Status : {status}</p>}</>;
-}
+function App() {}
 
 export default App;
