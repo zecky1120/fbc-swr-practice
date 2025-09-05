@@ -13,13 +13,9 @@ const fetcher = async (url) => {
 
 function App() {
   const { data, error, isLoading } = useSWR(url, fetcher);
-  if (error) {
-    return <p>Failed to load.</p>;
-  } else if (isLoading) {
-    return <p>loading...</p>;
-  } else {
-    return <>{data && <p>Status: {data.description}</p>}</>;
-  }
+  if (error) return <p>Failed to load.</p>;
+  if (isLoading) return <p>Loading...</p>;
+  return <>{data && <p>Status: {data.description}</p>}</>;
 }
 
 export default App;
