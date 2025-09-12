@@ -6,6 +6,7 @@ const PORT = 3001;
 app.get('/:status', (req, res) => {
   const status = parseInt(req.params.status);
   const sleep = parseInt(req.query.sleep) || 0;
+  res.set({ 'Access-Control-Allow-Origin': '*' });
   
   // 有効なHTTPステータスコードかチェック
   if (isNaN(status) || status < 100 || status > 599) {
